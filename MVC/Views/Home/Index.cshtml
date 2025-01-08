@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    var userName = User.Identity.IsAuthenticated ? User.Identity.Name : String.Empty;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Turkish Republic of Meskhetia Central Commision of Elections<br>@AppSettings.Title @userName</h1>
+    <p>@AppSettings.Description</a>.</p>
+</div>
